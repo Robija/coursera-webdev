@@ -7,15 +7,68 @@
 		Links
 		</title>
 	
+	<style>
+	
+		h1 {
+			text-align: center;
+		
+		}
+		
+		div.gray-area {
+			background-color: LIGHTGRAY;
+			width: 200px;
+			
+		}
+		
+		article > p {
+			color:blue;
+		}
+	
+	
+	</style>
 	</head>
 	
 	
 	<body>
-	
+		<h1>Power of CSS</h1>
 		<ul>
 			<li>Internal</li>
 			<li>External</li>
 		</ul>
+		<h2>CSS rule</h2>
+		<div class="gray-area">
+		<code>h1 {<br> 
+			text-align: center;
+		<br>}</code>
+		</div>
+		<br>
+		<div >
+			<article>
+				<div class="gray-area">
+					<code>		
+							article > p {<br>
+							color:blue;<br>
+							}
+					</code>
+				</div>
+				<p>This &lt;p&gt; should be blue because the p-tag
+					is a <em>direct</em> descendent of an article-tag </p>
+				
+			</article>
+			
+		</div>
+		<ul>
+			<li>Selector: "h1" </li>
+			<li>Declaration "text-align: center;"</li>
+			<li>Property: "text-align"</li>
+			<li>Value: "center"</li>
+			<li>Art of selector : element selector</li>
+		</ul>
+		
+		<a href="#" target="_blank" title="link">The "a"-tag is an inline as well as a block element</a>
+		<p>
+		<img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-379274.jpg" height="400" width="400">
+		</p>
 	
 	
 	</body>
