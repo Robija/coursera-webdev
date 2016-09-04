@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<title>Positioning elements by floating</title>
+		<style>
+		
+			div {
+				/*background-color: #00FFFF;*/
+			
+			}
+			
+			p {
+				width: 50%;
+				border: 1px solid black;
+				background: #A52A2A
+				width: 90%;
+				height: 150px;
+				
+				margin-left: auto;
+				margin-right: auto;
+				font-family: Helvetica;
+				color: white;
+				
+			}
+			
+			.row {
+				width:  100%;
+			}
+			
+			/************** Large devices only ***************/
+			@media (min-width: 1200px) {
+				.col-lg-1 .col-lg-2 .col-lg-3 .col-lg-4 .col-lg-5 .col-lg-6
+				.col-lg-7 .col-lg-8 .col-lg-9 .col-lg-10 .col-lg-11 .col-lg-12 {
+				
+					float: left;
+					border: 1px solid green;
+				}
+			
+			}
+			
+			.col-lg-1 {
+			
+				width: 8.33% ;
+			}
+			
+			.col-lg-2 {
+			
+				width: 16.66%;
+			}
+			
+			.col-lg-3 {
+			
+				width: 25%;
+			}
+			
+			.col-lg-4 {
+			
+				width: 33%;
+			}
+			
+			.col-lg-5 {
+			
+				width: 41.66%;
+			}
+			
+			.col-lg-6 {
+			
+				width: 50%;
+			}
+			
+			.col-lg-7 {
+			
+				width: 58.33%;
+			}
+			
+			.col-lg-8 {
+			
+				width: 66.66%;
+			}
+			
+			.col-lg-9 {
+			
+				width: 74.99%;
+			}
+			
+			.col-lg-10 {
+			
+				width: 83.33%;
+			}
+			
+			.col-lg-11 {
+			
+				width: 91.66%;
+			}
+			
+			.col-lg-12 {
+			
+				width: 100%;
+			}
+			
+			
+			
+			
+			
+			#p1{
+				/*background-color: #A52A2A;*/
+				
+			}
+
+			#p2{
+				/*background-color: #DEB887;*/
+				
+			
+			}
+
+			
+		
+			section {
+				clear: left;
+			}
+		
+		</style>
+	</head>
+
+
+	<body>
+		
+		<div>
+			<p id="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Cras vitae diam tincidunt, varius libero at, ullamcorper orci. Sed a 
+			rutrum dolor. Integer vitae dui sed sem finibus dapibus. Morbi vel nibh 
+			sit amet est efficitur interdum ac in est. Ut pretium convallis metus, 
+			vitae vehicula ligula dapibus sit amet. Donec scelerisque magna vel interdum 
+			dignissim. Suspendisse in aliquet purus. Suspendisse vel orci sollicitudin 
+			turpis pellentesque ornare. In placerat risus fermentum ipsum scelerisque 
+			aliquet. Donec sed blandit nisi. Cras pulvinar vulputate blandit.
+			
+			</p>
+			<p id="p2">
+				Suspendisse tincidunt id sem vitae aliquam. Maecenas hendrerit odio viverra
+				aliquam ultricies. Nulla eget nunc tempor, feugiat dolor consequat, molestie 
+				nunc. Curabitur non velit bibendum, tempus massa eu, ullamcorper metus. Fusce 
+				a felis enim. Integer eu lorem nec odio maximus euismod. Nam porttitor posuere 
+				lacus ac vehicula. Suspendisse lacus nulla, ultrices id purus molestie, 
+				dignissim rutrum sapien. Donec pellentesque eu arcu nec vehicula.
+			</p>
+			
+
+			<section>This is regular content continuing after the paragraph boxes.</section>	
+		</div>		
+		<!-- the clear  does not allow ellements to flow on the side that is assigned to the clear attribute
+				e.g. clear : left; nothing is floating on the left side -->
+		
+	
+	</body>
+
+</html>

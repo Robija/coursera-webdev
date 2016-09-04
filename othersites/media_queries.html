@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<title>Positioning elements by floating</title>
+		<style>
+		
+		
+			h1 {
+				margin-bottom: 15px;
+			}
+			
+			
+			div {
+				/*background-color: #00FFFF;*/
+			
+			}
+			
+			p {
+				margin-bottom: 15px;
+				border: 1px solid black;
+			}
+			
+			
+			#p1{
+				background-color: #A52A2A;
+				width: 300px;
+				height: 300px;
+				
+			}
+
+			#p2{
+				background-color: #DEB887;
+				width: 50px;
+				height: 50px;
+	
+			
+			}
+
+			
+		
+			section {
+				clear: left;
+			}
+		
+		
+		/******** Large devices only***********/
+		
+		@media (min-width: 1200px) {
+			
+			#p1 {
+				width: 80%;
+			
+			}
+			
+			#p2{
+				width: 150px;
+				height: 150px;
+			
+			}
+		}
+
+
+		/******** Medium devices only***********/
+		
+		@media (min-width: 992px) and (max-width: 1199px){
+			
+			#p1 {
+				width: 50%;
+			
+			}
+			
+			#p2{
+				width: 100px;
+				height: 100px;
+			
+			
+			
+		}
+		</style>
+	</head>
+
+
+	<body>
+	
+		<h1>Media Queries</h1>
+		
+		<div>
+			<p id="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Cras vitae diam tincidunt, varius libero at, ullamcorper orci. Sed a 
+			rutrum dolor. Integer vitae dui sed sem finibus dapibus. Morbi vel nibh 
+			sit amet est efficitur interdum ac in est. Ut pretium convallis metus, 
+			vitae vehicula ligula dapibus sit amet. Donec scelerisque magna vel interdum 
+			dignissim. Suspendisse in aliquet purus. Suspendisse vel orci sollicitudin 
+			turpis pellentesque ornare. In placerat risus fermentum ipsum scelerisque 
+			aliquet. Donec sed blandit nisi. Cras pulvinar vulputate blandit.
+			
+			</p>
+			<p id="p2">
+				
+			</p>
+			
+
+			
+		</div>		
+		<!-- the clear  does not allow ellements to flow on the side that is assigned to the clear attribute
+				e.g. clear : left; nothing is floating on the left side -->
+		
+	
+	</body>
+
+</html>

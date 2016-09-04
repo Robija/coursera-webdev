@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<title>Positioning elements by floating</title>
+		<style>
+		
+			div {
+				/*background-color: #00FFFF;*/
+			
+			}
+			
+			p {
+				width: 50%;
+				/*border: 1px solid black;*/
+				float:left;
+				padding: 10px;
+			}
+			
+			
+			#p1{
+				/*background-color: #A52A2A;*/
+				
+			}
+
+			#p2{
+				/*background-color: #DEB887;*/
+				
+			
+			}
+
+			
+		
+			section {
+				clear: left;
+			}
+		
+		</style>
+	</head>
+
+
+	<body>
+		
+		<div>
+			<p id="p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Cras vitae diam tincidunt, varius libero at, ullamcorper orci. Sed a 
+			rutrum dolor. Integer vitae dui sed sem finibus dapibus. Morbi vel nibh 
+			sit amet est efficitur interdum ac in est. Ut pretium convallis metus, 
+			vitae vehicula ligula dapibus sit amet. Donec scelerisque magna vel interdum 
+			dignissim. Suspendisse in aliquet purus. Suspendisse vel orci sollicitudin 
+			turpis pellentesque ornare. In placerat risus fermentum ipsum scelerisque 
+			aliquet. Donec sed blandit nisi. Cras pulvinar vulputate blandit.
+			
+			</p>
+			<p id="p2">
+				Suspendisse tincidunt id sem vitae aliquam. Maecenas hendrerit odio viverra
+				aliquam ultricies. Nulla eget nunc tempor, feugiat dolor consequat, molestie 
+				nunc. Curabitur non velit bibendum, tempus massa eu, ullamcorper metus. Fusce 
+				a felis enim. Integer eu lorem nec odio maximus euismod. Nam porttitor posuere 
+				lacus ac vehicula. Suspendisse lacus nulla, ultrices id purus molestie, 
+				dignissim rutrum sapien. Donec pellentesque eu arcu nec vehicula.
+			</p>
+			
+
+			<section>This is regular content continuing after the paragraph boxes.</section>	
+		</div>		
+		<!-- the clear  does not allow ellements to flow on the side that is assigned to the clear attribute
+				e.g. clear : left; nothing is floating on the left side -->
+		
+	
+	</body>
+
+</html>
