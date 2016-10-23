@@ -1,0 +1,15 @@
+*Expression and interpolation*
+
+**Lazy fetchig - Lecture11: Part2**
+- HTML is processed sequentially 
+- e.g. <img alt="" src="images/yaakov_{{stateOfBeing}}.png">
+  {{stateOfBeing}} will not be found, because AngularJS has not 
+  processed the respecitve line, which as a result, will be shown
+  as an 404 error in the console. 
+  
+- SOLUTION: instead of a standard /src/-tag, add /ng-src/-tag,
+  as ab outcome, the browser fetches the image, after AngularJS
+  has injected it witha value. 
+  (https://docs.angularjs.org/api/ng/directive/ngSrc)
+  
+
